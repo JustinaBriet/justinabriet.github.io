@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+nav,
+header,
+main
+ {
+    width: 100vw;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.galeria { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 5vw;
+}
+
+nav {
+    color: white;
+    background-color: black;
+    height: 15vh;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+}
+
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+
+}
+
+.presentacion {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.presentacion div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+section iframe {
+   margin-top: 10vh;
+   margin-bottom: 10vh;
+}
+
+main section div {
+    width: 30%;
+}
+
+section div img {
+    width: 100%;
+}
+
+footer div {
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div p {
+    color: white;
+}
+
+nav h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 15vw;
+    height: 5vh;
+}
+
+footer img {
+    transition: transform .7s ease-in-out;
+  }
+
+footer img:hover {
+    transform: rotate(360deg);
+}
+
+header h1 {
+    font-family: 'Crimson Text', serif;
+}
+
+h3, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header p,
+nav a,
+header a {
+    font-size: 20px;
+}
+
+nav a,
+header a {
+
+    color: white;
+
+}
+
+header a {
+    background-color: #212529;
+    text-transform: capitalize;
+}
+
+
+nav span {
+    display: none;
+}
+
+/*lo hago desaparecer*/
+
+
+.icon-menu,
+.icon-icono-1,
+.icon-icono-2 {
+    /*
+    color: red;*/
+    font-size: 6vw;
+
+}
+
+.icon-menu:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    /*implementamos la mano*/
+}
+
+nav img {
+    width: 250px;
+    height: 50px;
+}
+
+
+
+@media(max-width:992px) {
+    nav div {
+        width: 40%;
+    }
+
+    iframe {
+        width: 90%;
+        padding: 5vw;
+    }
+
+    .presentacion div {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    nav div {
+        display: none;
+    }
+
+    /*lo hago desaparecer*/
+
+    nav span {
+        display: inline;
+    }
+
+    /*lo vuelo a mostrar*/
+
+    section div {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .galeria {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacion div {
+        width: 80%;
+    }
+
+    .galeria div {
+        width: 70%;
+    }
+
+    iframe {
+        width: 100%;
+        padding: 5vw;
+    }
+
+}
